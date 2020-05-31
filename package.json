@@ -1,0 +1,32 @@
+{
+  "name": "Natours",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.html",
+  "watch": {
+    "compile:sass": {
+      "patterns": [
+        "sass"
+      ],
+      "extensions": "scss"
+    }
+  },
+  "scripts": {
+    "lite": "lite-server",
+    "start": "concurrently \"npm run watch\" \"npm run lite\"",
+    "compile:sass": "node-sass sass/main.scss css/style.css",
+    "watch": "npm-watch compile:sass"
+  },
+  "author": "Eugenepro",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "npm-watch": "^0.6.0"
+  }
+}
