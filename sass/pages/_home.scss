@@ -3,3 +3,31 @@
     padding: 25rem 0;
     margin-top: -20vh;
 }
+
+.section-features {
+    margin-top: -25vh;
+    height: 80rem;
+    background-image: linear-gradient(
+        to right bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary-dark, 0.8)),
+        url('../img/nat-6.jpg');
+    background-size: cover;
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+
+    .row {
+        // transform: translateY(calc((110vh - 35rem) / 2));
+        transform: translateY(calc((80rem - 25rem) / 2));
+    }
+}
+
+.section-tours {
+    margin-top: -20%;
+    background-color: $color-grey-light-1;
+    padding: 25rem 0 0 0;
+}
+
+.section-stories {
+    padding: 15rem 0;
+    background-color: $color-grey-light-1;
+}
